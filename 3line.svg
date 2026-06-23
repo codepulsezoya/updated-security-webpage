@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="100%" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 34 34" width="100%">
+<g id="Frame 47585">
+<rect fill="#C63521" height="34" width="34"/>
+<line id="Line 22" stroke="var(--stroke-0, white)" x1="8" x2="26" y1="10.5" y2="10.5"/>
+<line id="Line 23" stroke="var(--stroke-0, white)" x1="8" x2="26" y1="16.5" y2="16.5"/>
+<line id="Line 24" stroke="var(--stroke-0, white)" x1="8" x2="26" y1="22.5" y2="22.5"/>
+</g>
+</svg>
