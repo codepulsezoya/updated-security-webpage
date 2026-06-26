@@ -27,7 +27,7 @@ body{
 body{
     padding-top:90px;
 }
-.top-bar{
+/* .top-bar{
     background:#071336;
     color:#fff;
     padding:10px 0;
@@ -36,9 +36,37 @@ body{
     left: 0;
     width: 100%;
     z-index: 9999;
+} */
+ .top-bar{
+    background:#031136;
+    color:#fff;
+    height:40px;
+    display:flex;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
 }
+/* .top-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+}
+    
 
 header{
+    position:fixed;
+    top:39px;
+    left:0;
+    width:100%;
+    z-index:9998;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+} */
+/* header{
     background:#fff;
     position:fixed;
     top:40px;
@@ -46,8 +74,28 @@ header{
     width:100%;
     padding:0;
     z-index:9998;
+} */
+ /* .top-bar{
+    background:#031136;
+    color:#fff;
+    padding:10px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    margin:0;
+    border:none;
+} */
+header{
+    background:#fff;
+    position:fixed;
+    top:40px;
+    left:0;
+    width:100%;
+    z-index:9998;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
-
 
 
 .top-flex{
@@ -85,6 +133,31 @@ header{
 
 .contact-info i{
     margin-right:6px;
+}
+@media (max-width:768px){
+
+    .top-flex{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:nowrap;
+    }
+
+    .contact-info{
+        gap:8px;
+    }
+
+    .contact-info span{
+        font-size:11px;
+    }
+
+    .social-icons{
+        gap:10px;
+    }
+
+    header{
+        top:40px;
+    }
 }
 
 /* ==========================================
@@ -592,15 +665,15 @@ header{
 
 .services-right{
     flex:1;
+  
 }
 
 .services-right img{
     width:100%;
-    max-width:600px;
     height:430px;
     object-fit:cover;
     border-radius:28px;
-    display:block;
+    /* display:block; */
 }
 .service-card:hover{
     background:#0D2E6B;
@@ -621,6 +694,25 @@ header{
     align-items:center;
     justify-content:center;
 }
+/* .services-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.services-left,
+.services-right{
+    flex:1;
+    min-width:0;
+} */
+
+/* .services-right img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:28px;
+} */
 
 /* =========================
    TABLET
@@ -1268,7 +1360,7 @@ header{
 ========================= */
 
 .about-banner{
-    background:url("../images/ur-safety.png.png");
+    background:url("ur-safety.png.png");
     background-size:cover;
     background-position:center;
     position:relative;
@@ -1311,15 +1403,16 @@ header{
 
 .belt-content h2{
     color:#fff;
-    font-size:62px;
+    font-size:54px;
     font-weight:800;
     line-height:1.1;
+    max-width:520px;
     margin:0;
 }
 
 .belt-content img{
-    width:90px;
-    height:90px;
+    width:80px;
+    height:80px;
 }
 
 .about-content{
@@ -1351,7 +1444,7 @@ header{
     display:inline-block;
     margin-top:20px;
     padding:12px 30px;
-    background:#2f69c9;
+    background:#e42424;
     color:#fff;
     text-decoration:none;
     border-radius:30px;
@@ -1364,6 +1457,40 @@ header{
     font-weight:500;
     margin-bottom:40px;
     color:#fff;
+}
+@media (max-width:991px){
+
+    .about-banner{
+        min-height:650px;
+    }
+
+    .banner-strip{
+        top:40px;
+    }
+
+    .belt-content{
+        padding:0 30px;
+    }
+
+    .belt-content h2{
+        font-size:42px;
+        max-width:360px;
+        
+    }
+
+    .belt-content img{
+        width:65px;
+        height:65px;
+    }
+
+    .about-box{
+        max-width:430px;
+    }
+
+    .about-box p{
+        font-size:17px;
+        line-height:1.7;
+    }
 }
 /* =========================
    WHY US
@@ -2141,9 +2268,9 @@ header{
         font-size:15px;
     }
 
-    .services-right img{
+    /* .services-right img{
         max-width:100px;
-    }
+    } */
 
     .service-item h3{
         font-size:18px;
@@ -2661,4 +2788,205 @@ header{
         max-width:360px;
         padding:30px 22px;
     }
+}
+@media(max-width:768px){
+
+    .contact-info{
+        display:flex;
+        flex-wrap:nowrap;
+        gap:10px;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    .contact-info a,
+    .contact-info span{
+        color:#fff !important;
+        text-decoration:none;
+        font-size:14px;
+    }
+
+    .contact-info::-webkit-scrollbar{
+        display:none;
+    }
+}
+@media(max-width:768px){
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:14px;
+    }
+
+    .service-card{
+        padding:10px;
+    }
+
+    .service-card img{
+        height:120px;
+    }
+
+    .service-content h3{
+        font-size:15px;
+    }
+
+    .service-content p{
+        font-size:13px;
+        line-height:1.5;
+        flex:1;
+    }
+
+    .service-content a{
+        padding:8px 18px;
+        font-size:13px;
+    }
+}
+/* @media (max-width:768px){
+
+    .contact-info{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:6px;
+        flex-wrap:nowrap;
+        white-space:nowrap;
+    }
+
+    .contact-info span{
+        font-size:10px;
+    }
+
+    .contact-info i{
+        font-size:9px;
+        margin-right:2px;
+    }
+
+    .top-bar{
+        padding:8px 0;
+    }
+
+    header{
+        top:42px;
+         
+    }
+
+    body{
+        padding-top:100px;
+    }
+} */
+
+/* @media (max-width:480px){
+
+    .social-icons{
+        display:none;
+    }
+
+    .contact-info{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:6px;
+        flex-wrap:nowrap;
+        white-space:nowrap;
+    }
+
+    .contact-info span{
+        font-size:9px;
+    }
+
+    .contact-info i{
+        font-size:8px;
+        margin-right:2px;
+    }
+
+    .top-bar{
+        padding:6px 0;
+    }
+
+    header{
+        top:38px;
+    }
+
+    body{
+        padding-top:95px;
+    }
+} */
+.contact-info a,
+.contact-info a:visited,
+.contact-info a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+@media (max-width:768px){
+
+    .top-bar{
+        height:40px;
+        padding:0;
+        margin:0;
+    }
+
+    header{
+        top:40px;
+        margin:0;
+    }
+
+    body{
+        padding-top:90px;
+    }
+
+    .contact-info{
+        gap:6px;
+        white-space:nowrap;
+    }
+
+    .contact-info span{
+        font-size:10px;
+    }
+
+    .contact-info i{
+        font-size:9px;
+        margin-right:2px;
+    }
+}
+/* ==========================
+   SERVICES IMAGE FINAL
+========================== */
+
+.services-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.services-right img{
+    width:100%;
+    max-width:560px;
+    height:430px;
+    object-fit:cover;
+    border-radius:24px;
+    display:block;
+}
+
+/* Tablet */
+
+@media (max-width:991px){
+
+.services-right img{
+    max-width:430px;
+    width:100%;
+    height:300px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.services-right img{
+    max-width:320px;
+    width:100%;
+    height:230px;
+}
+
 }
