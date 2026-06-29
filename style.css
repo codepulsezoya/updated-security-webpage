@@ -2990,3 +2990,77 @@ header{
 }
 
 }
+/* ================= HERO FINAL BLUR ================= */
+
+@media (min-width:992px){
+
+.hero{
+    background:none;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:url("../images/hero-banner.png.png") center center/cover no-repeat;
+
+    filter:blur(18px);
+    transform:scale(1.08);
+
+    z-index:0;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.30);
+    z-index:1;
+}
+
+.hero-content{
+    position:relative;
+    z-index:5;
+}
+
+.hero-left{
+    background:transparent !important;
+    backdrop-filter:none !important;
+    -webkit-backdrop-filter:none !important;
+}
+
+.hero-right{
+    position:relative;
+    z-index:5;
+}
+
+.hero-right img{
+    display:block;
+    width:100%;
+}
+
+}
+
+
+@media (max-width:991px){
+
+.hero::before{
+    filter:none;
+    transform:none;
+}
+
+.hero-left{
+
+    background:rgba(20,20,20,.35) !important;
+
+    backdrop-filter:blur(16px) !important;
+    -webkit-backdrop-filter:blur(16px) !important;
+
+    border-radius:20px;
+
+}
+
+}
