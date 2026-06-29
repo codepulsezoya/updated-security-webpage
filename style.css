@@ -2994,7 +2994,7 @@ header{
     position:absolute;
     inset:0;
 
-    background:url("../images/hero-banner.png.png") center center/cover no-repeat;
+    background:url("hero-banner.png.png") center center/cover no-repeat;
 
     filter:blur(18px);
     transform:scale(1.08);
